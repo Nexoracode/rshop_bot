@@ -30,7 +30,7 @@ DB_CONFIG = {
 
 # FTP Configuration for Image Upload
 FTP_CONFIG = {
-    'host': os.getenv('FTP_HOST', 'dl.poshtybanman.ir'),
+    'host': os.getenv('FTP_HOST', 'ftp.poshtybanman.ir'),
     'port': int(os.getenv('FTP_PORT', 21)),
     'user': os.getenv('FTP_USER'),
     'password': os.getenv('FTP_PASSWORD'),
