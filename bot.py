@@ -221,7 +221,8 @@ class ShopBot:
             
             # ذخیره موقت
             import time
-            temp_path = f'/tmp/telegram_image_{user_id}_{int(time.time())}.jpg'
+            import tempfile
+            temp_path = os.path.join(tempfile.gettempdir(), f'telegram_image_{user_id}_{int(time.time())}.jpg')
             await file.download_to_drive(temp_path)
             
             # آپلود به FTP
